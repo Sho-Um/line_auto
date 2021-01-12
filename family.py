@@ -8,8 +8,8 @@ import os
 
 TOKEN = os.environ['LINE_FAMILY_TOKEN']
 api_url = 'https://notify-api.line.me/api/notify'
-# send_contents = "\n19時だよ！\n今日も１日おつかれさまです^^"
-send_contents = "\n送れた！自動送信です ^^"
+send_contents = "\n19時だよ！\n今日も１日おつかれさまです^^"
+# send_contents = "\n送れた！自動送信です ^^"
 
 TOKEN_dic = {'Authorization': 'Bearer' + ' ' + TOKEN}
 send_dic = {'message': send_contents}
