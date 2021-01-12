@@ -1,14 +1,14 @@
 import requests
-import datetime
-import pytz
+# import datetime
+# import pytz
 import os
 
-time = datetime.datetime.now(pytz.timezone('Asia/Tokyo'))
-time = time.strftime('%Y年%m月%d日 %H:%M:%S')
+# time = datetime.datetime.now(pytz.timezone('Asia/Tokyo'))
+# time = time.strftime('%Y年%m月%d日 %H:%M:%S')
 
 TOKEN = os.environ['LINE_MY_TOKEN']
 api_url = 'https://notify-api.line.me/api/notify'
-send_contents = "\n今なにしてる？\n(" + time + ")"
+send_contents = "\n今なにしてる？"
 
 TOKEN_dic = {'Authorization': 'Bearer' + ' ' + TOKEN}
 send_dic = {'message': send_contents}
