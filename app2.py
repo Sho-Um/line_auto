@@ -8,7 +8,7 @@ import os
 
 TOKEN = os.environ['LINE_MY_TOKEN']
 api_url = 'https://notify-api.line.me/api/notify'
-send_contents = "\nおはようございます！\n今日１日の目標を２,３個書こう！"
+send_contents = "\n13時だよ！\n午前中にやったことの振り返りをしよう！"
 
 TOKEN_dic = {'Authorization': 'Bearer' + ' ' + TOKEN}
 send_dic = {'message': send_contents}
